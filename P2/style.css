@@ -1,0 +1,190 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+}
+.banner{
+    position: relative;
+    width: 100%;
+    height: 400px;
+
+}
+.banner img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+.banner-text{
+    position: absolute;
+    
+    left: 0;
+     opacity: 0;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    box-sizing: border-box;
+}
+.banner:hover .banner-text {
+    opacity: 1;
+}
+nav a {
+    
+    text-decoration: none;
+    color: rgb(28, 125, 190);
+}
+nav {
+    display: flex;
+    gap: 30px;
+    padding: 15px ;
+    flex-wrap: wrap;
+  
+}
+.profile {
+    text-align: center;
+    padding: 30px 20px 10px;
+    width: 90%;
+    max-width: 900px;
+    margin: auto;
+}
+.profile img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.profile h1 {
+    margin-top: 20px;
+}
+
+.profile p {
+    max-width: 600px;
+    margin: 15px auto;
+    line-height: 1.6;
+}
+
+.profile h2 {
+    margin-top: 25px;
+}
+.portfolio {
+    padding:  20px;
+    text-align: center;
+}
+
+.projects {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.project {
+    width: 300px;
+    max-width: 100%;
+}
+
+.project img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.project h3 {
+    margin-top: 15px;
+}
+
+.project p {
+    line-height: 1.5;
+    min-height: 70px;
+}
+.gallery-grid img {
+    width: 220px;
+    height: 120px;
+    object-fit: cover;
+    display: block;
+     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+   column-gap: 15px;
+    row-gap: 10px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+.gallery h2 {
+    margin-bottom: 25px;
+}
+.gallery {
+    padding: 30px 20px;
+    text-align: center;
+}
+.intro-heading {
+    margin-bottom: 10px;
+}
+
+.profile hr {
+    width: 150px;
+    border: 0;
+    border-top: 2px solid rgb(112, 126, 135);
+    margin: 0 auto;
+}
+.contact {
+    text-align: center;
+    padding: 40px 20px;
+    margin-top: 20px;
+}
+
+.contact h2 {
+    color: #111111;
+    margin-bottom: 15px;
+}
+
+.contact p {
+    color: #333333;
+    line-height: 1.6;
+}
+
+.contact a {
+    color: rgb(28, 125, 190);
+    text-decoration: none;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
+#newsletter {
+    padding: 40px;
+    text-align: center;
+}
+
+#newsletterform {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+#newsletter input {
+    padding: 10px;
+    width: 300px;
+    max-width: 90%;
+}
+
+#newsletter button {
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+#newsletter #message {
+    margin-top: 15px;
+}
